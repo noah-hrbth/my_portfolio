@@ -1,0 +1,38 @@
+@import "./variables";
+
+:root {
+	.dark-theme {
+		--colorBackgroundPrimary: #0f0e17;
+		--colorBackgroundSecondary: #fffffe;
+		--colorHeadlinePrimary: #fffffe;
+		--colorHeadlineSecondary: #0f0e17;
+		--colorTextPrimary: #a7a9be;
+		--colorTextSecondary: #2e2f3e;
+	}
+}
+
+body {
+	transition: $transition;
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	color: var(--colorTextPrimary);
+	background-color: var(--colorBackgroundPrimary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--colorHeadlinePrimary) !important;
+}
+
+p,
+a,
+span,
+li {
+	color: var(--colorTextPrimary);
+}
+
+
